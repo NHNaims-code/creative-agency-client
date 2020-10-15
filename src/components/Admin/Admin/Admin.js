@@ -4,6 +4,7 @@ import logo from '../../../images/logos/logo.png'
 import AddService from '../AddService/AddService';
 import AdminServiceList from '../AdminServiceList/AdminServiceList';
 import './Admin.css'
+import MakeAdmin from './MakeAdmin/MakeAdmin';
 
 const Admin = () => {
     const [selected, setSelected] = useState("Service List")
@@ -33,10 +34,10 @@ const Admin = () => {
                     {
                         selected==='Add Service'&&<AddService></AddService>
                     }
+                    {
+                        selected==='Make Admin' && <MakeAdmin></MakeAdmin>
+                    }
                     </div>
-                    {/* {
-                        selected==='review'&&<Review></Review>
-                    } */}
                 </div>
             </div>
         </div>

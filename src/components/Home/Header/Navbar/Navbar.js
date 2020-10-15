@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../../images/logos/logo.png'
+import {UserContext} from '../../../../App'
 
 const Navbar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    const [adminData, setAdminData] = useState(false);
+    if(loggedInUser.email){
+        fetch('https://nameless-crag-78686.herokuapp.com/checkAdmin/'+loggedInUser.email)
+        .then(response => response.json())
+        .then(result => {
+            if(result.email){
+                setAdminData(true)
+            }
+            else{
+                setAdminData(false)
+            }
+        })
+    }
     return (
         <nav class="navbar navbar-expand-lg navbar-light container mx-auto">
         <a class="navbar-brand" href="#">
@@ -29,9 +45,20 @@ const Navbar = () => {
                     <a class="nav-link" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <Link to="/place-order">
-                        <button className="btn landing-dark-bg px-4">Login</button>
-                    </Link>
+                    
+                        {
+                            adminData && loggedInUser.email && <Link to="/admin"><button className="btn landing-dark-btn px-4">Admin</button></Link>
+                        }
+                        {
+                            !adminData && !loggedInUser.email &&<Link to="/login"><button className="btn landing-dark-btn px-4">Login</button></Link>
+                        }                       
+                        {
+
+                            !adminData && loggedInUser.email && <Link to="/place-order"><img src={loggedInUser.photoURL} style={{borderRadius: '50px', height: '50px'}} alt=""/></Link>
+                        }
+                            
+
+                      
                 </li>
             </ul>
         </div>

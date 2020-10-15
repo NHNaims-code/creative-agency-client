@@ -67,7 +67,7 @@ const Order = () => {
                         <input type="file" onChange={handleOnChange} name="file" required></input>
                     </div>
                 </div>
-                    <button class={`btn landing-dark-bg px-5 py-2 ${disableButton &&'disabled'}`} >Send</button>
+                    <button class={`btn landing-dark-btn px-5 py-2 ${disableButton &&'disabled'}`} >Send</button>
             </div>
         </form>
     );

@@ -16,7 +16,7 @@ const Footer = () => {
                         <input type="email" className="form-control mb-2" name="email" placeholder="your email address"/>
                         <input type="text" className="form-control mb-2" name="name" placeholder="Your name / company's name"/>
                         <textarea name="message" className="form-control mb-2" rows="10" placeholder="Your message"/>
-                        <input type="submit" value="Send" className="btn landing-dark-bg px-4"/>
+                        <input type="submit" value="Send" className="btn landing-dark-btn px-4"/>
                     </form>
                 </div>
             </div>

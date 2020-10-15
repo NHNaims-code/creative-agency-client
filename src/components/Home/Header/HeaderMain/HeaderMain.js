@@ -12,7 +12,7 @@ const HeaderMain = () => {
                     <h1>Let's Grow Your Brand To The Next Level</h1>
                     <p className="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat</p>
                     <Link to='/place-order'>
-                        <button className="btn landing-dark-bg px-4">Hire us</button>
+                        <button className="btn landing-dark-btn px-4">Hire us</button>
                     </Link>
                 </div>
             </div>

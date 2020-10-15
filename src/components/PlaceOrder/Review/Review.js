@@ -44,7 +44,7 @@ const Review = () => {
             <input type="text" onBlur={handleOnBlur} name="name" defaultValue={loggedInUser.displayName} className="form-control m-4" placeholder="Your name" required/>
             <input type="text" onBlur={handleOnBlur} name="designation" className="form-control m-4" placeholder="Company's name, Designation" required/>
             <textarea name="description" onBlur={handleOnBlur}className="form-control m-4" placeholder="Description" rows="4" required/>
-            <button type="submit" className={`btn landing-dark-bg px-4 m-4 ${disableButton && 'disabled'}`}>Submit</button>
+            <button type="submit" className={`btn landing-dark-btn px-4 m-4 ${disableButton && 'disabled'}`}>Submit</button>
         </form>
     );
 };
