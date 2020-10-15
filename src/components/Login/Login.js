@@ -7,7 +7,7 @@ import './Login.css';
 import logo from '../../images/logos/logo.png';
 import google from '../../images/icons/google.svg'
 import { UserContext } from '../../App';
-import firebaseConfig from '../../configs/firebase.config';
+import firebaseConfig from '../configs/firebase.config';
 firebase.initializeApp(firebaseConfig);
 
 
