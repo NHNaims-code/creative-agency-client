@@ -9,7 +9,7 @@ const AdminServiceCard = ({serviceInfo}) => {
         setStatusChange(updatetatus)
     }
     useEffect(()=>{
-        fetch(`https://nameless-crag-78686.herokuapp.com/updateStatus/${serviceInfo._id}`, {
+        fetch(`https://cryptic-scrubland-55097.herokuapp.com/updateStatus/${serviceInfo._id}`, {
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
 

@@ -17,7 +17,7 @@ const ServiceCard = ({info}) => {
     return (
         <div className="col-md-4 col-sm-12 ">
             <div onClick={handleOnClick} className="m-5 p-2 rounded text-center service-card-root pt-3">
-                <img height="80px" src={`https://nameless-crag-78686.herokuapp.com${info.path}`} alt=""/>
+                <img height="80px" src={`https://cryptic-scrubland-55097.herokuapp.com${info.path}`} alt=""/>
                 <h4 className="mt-4">{info.title}</h4>
                 <p>{info.desc}</p>
             </div>

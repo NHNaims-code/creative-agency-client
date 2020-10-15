@@ -7,7 +7,7 @@ const MakeAdmin = () => {
         setNewAdmin(e.target.value)
     }
     const handleOnClick = () => {
-        fetch( `https://nameless-crag-78686.herokuapp.com/addAdmin/${newAdmin}`)
+        fetch( `https://cryptic-scrubland-55097.herokuapp.com/addAdmin/${newAdmin}`)
         .then(response => response.json())
         .then(result => {
             if(result){

@@ -6,7 +6,7 @@ const AdminServiceList = () => {
     const [serviceListInfo, setServiceListInfo] = useState([]);
     
     useEffect(()=>{
-        fetch('https://nameless-crag-78686.herokuapp.com/serviceList')
+        fetch('https://cryptic-scrubland-55097.herokuapp.com/serviceList')
         .then(res => res.json())
         .then(data => setServiceListInfo(data))
         console.log(serviceListInfo);

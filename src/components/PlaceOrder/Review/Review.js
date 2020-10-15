@@ -19,7 +19,7 @@ const Review = () => {
         const newData = {...info}
         newData.photoURL = loggedInUser.photoURL;
         newData.name = loggedInUser.displayName;
-        fetch('https://nameless-crag-78686.herokuapp.com/addreview', {
+        fetch('https://cryptic-scrubland-55097.herokuapp.com/addreview', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newData)

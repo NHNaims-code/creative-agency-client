@@ -20,7 +20,7 @@ const AddService = () => {
                 formData.append('title', info.title)
                 formData.append('desc', info.desc)
 
-                fetch('https://nameless-crag-78686.herokuapp.com/addService', {
+                fetch('https://cryptic-scrubland-55097.herokuapp.com/addService', {
                     method: 'POST',
                     body: formData
                 })

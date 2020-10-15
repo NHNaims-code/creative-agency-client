@@ -7,7 +7,7 @@ import ServiceListCard from './ServiceListCard/ServiceListCard';
 const ServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [serviceInfo, setServiceInfo] = useState([])
-    fetch('https://nameless-crag-78686.herokuapp.com/userOrder/'+loggedInUser.email)
+    fetch('https://cryptic-scrubland-55097.herokuapp.com/userOrder/'+loggedInUser.email)
     .then(res => {
         if(res){
           return  res.json()

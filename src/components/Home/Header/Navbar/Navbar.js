@@ -8,7 +8,7 @@ const Navbar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [adminData, setAdminData] = useState(false);
     if(loggedInUser.email){
-        fetch('https://nameless-crag-78686.herokuapp.com/checkAdmin/'+loggedInUser.email)
+        fetch('https://cryptic-scrubland-55097.herokuapp.com/checkAdmin/'+loggedInUser.email)
         .then(response => response.json())
         .then(result => {
             if(result.email){

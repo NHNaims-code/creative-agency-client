@@ -32,7 +32,7 @@ const Order = () => {
         formData.append('service', info.service)
         formData.append('serviceIcon', selectedService.path)
 
-        fetch('https://nameless-crag-78686.herokuapp.com/addOrder', {
+        fetch('https://cryptic-scrubland-55097.herokuapp.com/addOrder', {
             method: 'POST',
             body: formData
         })

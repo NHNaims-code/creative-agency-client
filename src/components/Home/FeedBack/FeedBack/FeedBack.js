@@ -7,7 +7,7 @@ import FeedBackCard from '../FeedBackCard/FeedBackCard';
 
 const FeedBack = () => {
     const [info, setInfo] = useState([])
-    fetch('https://nameless-crag-78686.herokuapp.com/reviews')
+    fetch('https://cryptic-scrubland-55097.herokuapp.com/reviews')
     .then(res => res.json())
     .then(data => setInfo(data))
     const customarsInfo = [
