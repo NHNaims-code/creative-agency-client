@@ -18,9 +18,9 @@ const PlaceOrder = () => {
                     <img src={logo} className="img-fluid" alt=""/>
                 </Link>
                 <ul>
-                    <li onClick={()=>{setSelected('order')}} ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Order</li>
-                    <li onClick={()=>{setSelected('service')}} ><i class="fa fa-shopping-bag" aria-hidden="true"></i> Service list</li>
-                    <li onClick={()=>{setSelected('review')}} ><i class="fa fa-comments" aria-hidden="true"></i> Review</li>
+                    <li onClick={()=>{setSelected('order')}}  className={`selection ${selected === 'order' && 'selected'}`} ><i className="fa fa-cart-arrow-down " aria-hidden="true"></i> Order</li>
+                    <li onClick={()=>{setSelected('service')}} className={`selection ${selected === 'service' && 'selected'}`}><i className="fa fa-shopping-bag " aria-hidden="true"></i> Service list</li>
+                    <li onClick={()=>{setSelected('review')}} className={`selection ${selected === 'review' && 'selected'}`}><i className="fa fa-comments" aria-hidden="true"></i> Review</li>
                 </ul>
             </div>
             <div className="col-md-10">
@@ -30,7 +30,7 @@ const PlaceOrder = () => {
                 </div>
                 <div className="place-order-form h-100">
                     {
-                        selected==='order'&&<Order></Order>
+                        selected==='order'&&<Order setSelected={setSelected}></Order>
                     }
                     {
                         selected==='service'&&<ServiceList></ServiceList>

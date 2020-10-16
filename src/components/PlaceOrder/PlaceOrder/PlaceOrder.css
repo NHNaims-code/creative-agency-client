@@ -16,3 +16,12 @@ ul li{
 .place-order-form{
     background-color: #F4F7FC;
 }
+.selection{
+    cursor: pointer;
+}
+.selection:hover{
+    color: green;
+}
+.selected{
+    color: green;
+}

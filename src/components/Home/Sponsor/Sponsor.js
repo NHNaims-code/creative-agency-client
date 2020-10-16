@@ -54,7 +54,7 @@ const Sponsor = () => {
             
             <Slider {...settings} className="pt-5 mt-5 container">
             {
-                sponsers.map(sponser => <div className=" w-100">
+                sponsers.map(sponser => <div key={sponser} className=" w-100">
                         <img src={sponser} height="50px" className="mx-auto" alt=""/>
                 </div>)
             }

@@ -2,10 +2,10 @@ import React from 'react';
 
 const FeedBackCard = ({info}) => {
     return (
-        <div className="col-md-4">
+        <div>
             <div className="shadow-sm m-3 p-3">
                 <div className="d-flex aligh-items-center mb-3">
-                    <div  style={{height:'60px', borderRadius: '50px'}} className="mr-2">
+                    <div  style={{height:'60px', borderRadius: '50px', overflow: 'hidden'}} className="mr-2">
                         <img className="img-fluid h-100" src={info.photoURL} alt=""/>
                     </div>
                     <div>

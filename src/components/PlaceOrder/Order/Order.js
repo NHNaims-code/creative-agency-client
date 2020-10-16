@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from '../../../App';
 
-const Order = () => {
+const Order = ({setSelected}) => {
     const [loggedInUser, setLoggedInUser, selectedService, setSelectedService] = useContext(UserContext);
     const [info, setInfo] = useState({})
     const [file, setFile] = useState({});
@@ -24,13 +24,14 @@ const Order = () => {
         setDisableButton(true);
         const formData = new FormData()
         formData.append('file', file)
-        formData.append('name', info.name || loggedInUser.name)
+        formData.append('name', info.name || loggedInUser.displayName)
         formData.append('email', loggedInUser.email)
         formData.append('photoURL', loggedInUser.photoURL)
         formData.append('details', info.details)
         formData.append('price', info.price)
         formData.append('service', info.service)
-        formData.append('serviceIcon', selectedService.path)
+        formData.append('serviceIcon', selectedService.path || 'https://upload.wikimedia.org/wikipedia/commons/0/0a/No-image-available.png')
+
 
         fetch('https://cryptic-scrubland-55097.herokuapp.com/addOrder', {
             method: 'POST',
@@ -40,6 +41,7 @@ const Order = () => {
         .then(data => {
             if(data){
                 alert("Success! Thanks for your Order.")
+                setSelected('service')
                 setDisableButton(false)
             }else{
                 alert("Sorry. Please check your form")
@@ -55,19 +57,19 @@ const Order = () => {
     return (
         <form onSubmit={handleOnSubmit}>
             <div className="w-50 p-5">
-                <input type="text" name="name" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Your name / company's name*" defaultValue={loggedInUser.displayName} required/>
-                <input type="email" name="email" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Your email address*" value={loggedInUser.email} required/>
+                <input type="text" name="name" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Your name / company's name*" defaultValue={loggedInUser.displayName} disabled/>
+                <input type="email" name="email" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Your email address*" value={loggedInUser.email} disabled/>
                 <input type="text" name="service" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Graphic Design*" value={selectedService.title} required/>
                 <textarea name="details" rows="5" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Project Details*" required/>
                 <div className="row d-flex align-items-center">
-                    <div className="col-md-6">
-                        <input type="number" name="price" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Price*" required/>
+                    <div className="col-md-6" style={{display:'inline-block'}}>
+                        <input type="number" name="price" min="1" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Price*" required/>
                     </div>
                     <div className="col-md-6">
                         <input type="file" onChange={handleOnChange} name="file" required></input>
                     </div>
                 </div>
-                    <button class={`btn landing-dark-btn px-5 py-2 ${disableButton &&'disabled'}`} >Send</button>
+                    <button className={`btn landing-dark-btn px-5 py-2 ${disableButton &&'disabled'}`} >Send</button>
             </div>
         </form>
     );

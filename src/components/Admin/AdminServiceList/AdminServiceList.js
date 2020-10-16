@@ -25,22 +25,9 @@ const AdminServiceList = () => {
                 </tr>
                 {
                     serviceListInfo.map(serviceInfo => 
-                        <AdminServiceCard serviceInfo={serviceInfo}></AdminServiceCard>
+                        <AdminServiceCard key={serviceInfo._id} serviceInfo={serviceInfo}></AdminServiceCard>
                         )
                 }
-                <tr  className="row px-1 d-flex justify-content-between w-100 m-0 rounded">
-            <td className="w-20"></td>
-                    <td className="w-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, atque!</td>
-                    <td className="w-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, atque!</td>
-                    <td className="w-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, atque!</td>
-                    <td>
-                    <select class="form-control">
-                        <option selected className="text-danger">Pending</option>
-                        <option className="text-warning">Ongoing</option>
-                        <option className="text-success">Done</option>
-                    </select>
-                    </td>
-                </tr>
             </table>
         </div>
     );

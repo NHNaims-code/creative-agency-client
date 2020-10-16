@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useContext } from 'react';
 import { useState } from 'react';
@@ -18,7 +19,10 @@ const ServiceList = () => {
     return (
         <div className="row m-5 p-5">
             {
+                serviceInfo.length > 0 ?
                 serviceInfo.map(data => <ServiceListCard data={data}></ServiceListCard>)
+                :
+                <h3>You have no service yet.</h3>
             }
         </div>
     );

@@ -31,9 +31,9 @@ const AdminServiceCard = ({serviceInfo}) => {
                     <td className="w-20">{serviceInfo.service}</td>
                     <td className="w-20">{serviceInfo.details}</td>
                     <td>
-                    <select class="form-control" onChange={handleStatus}>
+                    <select className="form-control" onChange={handleStatus}>
                         {
-                            serviceInfo.status === 'pending'?
+                            serviceInfo.status === 'Pending'?
                             <option className="text-danger" selected>Pending</option>
                             :
                             <option className="text-danger">Pending</option>

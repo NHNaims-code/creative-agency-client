@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="brand-bg">
+        <div className="brand-bg" id="contact">
             <div className="container mx-auto p-5 row footer-root">
                 <div className="col-md-6">
                     <div className="left-box">

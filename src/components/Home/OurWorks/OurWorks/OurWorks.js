@@ -47,7 +47,7 @@ const OurWorks = () => {
     ]
   };
     return (
-        <div className="our-works-root landing-dark-bg py-5 w-100">
+        <div className="our-works-root landing-dark-bg py-5 w-100" id="portfolio">
         <h2 className="text-center pt-3 pb-2">Here are some of <span className="landing-text">our works</span></h2>
   
         <div>
@@ -68,30 +68,30 @@ const OurWorks = () => {
         </Slider>
       </div>
 
-        {/* <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        {/* <div id="carouselExampleIndicators" className="carousel slide " data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src={carousel1} class="d-block w-50 mx-auto" alt="..."/>
+        <div className="carousel-inner">
+            <div className="carousel-item active">
+                <img src={carousel1} className="d-block w-50 mx-auto" alt="..."/>
             </div>
-            <div class="carousel-item ">
-                <img src={carousel2} class="d-block w-50 mx-auto" alt="..."/>
+            <div className="carousel-item ">
+                <img src={carousel2} className="d-block w-50 mx-auto" alt="..."/>
             </div>
-            <div class="carousel-item ">
-                <img src={carousel3} class="d-block w-50 mx-auto" alt="..."/>
+            <div className="carousel-item ">
+                <img src={carousel3} className="d-block w-50 mx-auto" alt="..."/>
             </div>
         </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
             </a>
         </div> */}
         </div>
