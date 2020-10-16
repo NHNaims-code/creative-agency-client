@@ -76,6 +76,9 @@ const FeedBack = () => {
         <div className="feedback-root container p-5 my-5">
             <h2 className="text-center pb-5">Clients <span className="landing-text">Feedback</span></h2>
 
+          {
+            info.length > 0 ?
+         
            <Slider  {...settings}>
                 {
                       info.map(customar => 
@@ -85,6 +88,9 @@ const FeedBack = () => {
                         )
                 }
           </Slider>
+          :
+          <h1>Loading...</h1>
+          }
         </div>
     );
 };

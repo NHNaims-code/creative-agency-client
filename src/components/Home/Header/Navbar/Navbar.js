@@ -58,9 +58,6 @@ const Navbar = () => {
 
                             !adminData && loggedInUser.email && <Link to="/place-order"><img src={loggedInUser.photoURL} style={{borderRadius: '50px', height: '50px'}} alt=""/></Link>
                         }
-                            
-
-                      
                 </li>
             </ul>
         </div>
