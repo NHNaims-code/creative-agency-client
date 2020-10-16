@@ -60,7 +60,7 @@ const Login = () => {
                    <img src={google} alt=""/>
                    <p onClick={handleGoogleSignIn}>Continue with Google</p>
                </div>
-                   <p className="mt-3">Don't have an account? <a href="#">Create an account</a></p>
+                   <p className="mt-3">Don't have an account? <a href="#" onClick={handleGoogleSignIn}>Create an account</a></p>
            </div>
         </div>
     );

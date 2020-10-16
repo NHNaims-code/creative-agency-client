@@ -43,8 +43,8 @@
     .resWidth{
         width: 25% !important;
     }
-    /* .text-sm-center{
-        text-align: center !important;
-    } */
+    .service-responsive{
+        margin-top: 10px !important;
+    }
 
   }
