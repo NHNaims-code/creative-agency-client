@@ -28,8 +28,8 @@ const Admin = () => {
                     <h5>{selected}</h5>
                     <h5>{loggedInUser.displayName}</h5>
                 </div>
-                <div className="place-order-form h-100 p-5">
-                    <div className="bg-white h-100 p-5 rounded">
+                <div className="place-order-form h-100 p-5 order-root">
+                    <div className="bg-white h-100 p-5 order-root rounded">
                         {
                             selected==='Service List'&&<AdminServiceList setSelected = {setSelected}></AdminServiceList>
                         }

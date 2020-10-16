@@ -73,7 +73,7 @@ const FeedBack = () => {
       ]
     };
     return (
-        <div className="feedback-root container p-5 my-5">
+        <div className="feedback-root container p-5 my-5 order-root">
             <h2 className="text-center pb-5">Clients <span className="landing-text">Feedback</span></h2>
 
           {

@@ -17,7 +17,7 @@ const MakeAdmin = () => {
     }
     return (
         <div>
-            <input type="email" name="email" onBlur={handleOnBlur} className="form-control w-50" placeholder="Enter new admin email"/>
+            <input type="email" name="email" onBlur={handleOnBlur} className="form-control w-50 order-root" placeholder="Enter new admin email"/>
             <button onClick={handleOnClick} className="btn landing-dark-btn px-4 mt-3">Add</button>
         </div>
     );

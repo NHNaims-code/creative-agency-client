@@ -4,10 +4,10 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className="brand-bg" id="contact">
-            <div className="container mx-auto p-5 row footer-root">
+            <div className="container mx-auto p-5 order-root row footer-root">
                 <div className="col-md-6">
                     <div className="left-box">
-                        <h2>Let us handle your project, professionally.</h2>
+                        <h2 className="pt-3">Let us handle your project, professionally.</h2>
                         <p><small>Wih well written codes, we build amazing apps for all platforms, mobile and web apps in general.</small></p>
                     </div>
                 </div>

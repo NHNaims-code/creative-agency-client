@@ -39,7 +39,7 @@ const AddService = () => {
     return (
         <form onSubmit={handleOnSubmit}>
             <div>
-                <div className="row p-5 d-flex align-items-center">
+                <div className="row p-5 order-root d-flex align-items-center">
                     <div className="col-md-6">
                         <h6>Service Title</h6>
                         <input type="text" name="title" onBlur={handleOnBlur} className="form-control" placeholder="Enter title"/>
