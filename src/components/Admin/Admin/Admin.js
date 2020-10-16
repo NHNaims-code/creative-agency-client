@@ -31,7 +31,7 @@ const Admin = () => {
                 <div className="place-order-form h-100 p-5">
                     <div className="bg-white h-100 p-5 rounded">
                         {
-                            selected==='Service List'&&<AdminServiceList></AdminServiceList>
+                            selected==='Service List'&&<AdminServiceList setSelected = {setSelected}></AdminServiceList>
                         }
                     {
                         selected==='Add Service'&&<AddService></AddService>

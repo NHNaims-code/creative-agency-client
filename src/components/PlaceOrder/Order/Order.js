@@ -56,7 +56,7 @@ const Order = ({setSelected}) => {
     }
     return (
         <form onSubmit={handleOnSubmit}>
-            <div className="w-50 p-5">
+            <div className="w-50 p-5 order-root">
                 <input type="text" name="name" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Your name / company's name*" defaultValue={loggedInUser.displayName} disabled/>
                 <input type="email" name="email" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Your email address*" value={loggedInUser.email} disabled/>
                 <input type="text" name="service" onBlur={handleOnBlur} className="form-control text-dark my-3" placeholder="Graphic Design*" value={selectedService.title} required/>

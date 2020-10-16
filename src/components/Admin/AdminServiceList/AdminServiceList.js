@@ -4,13 +4,14 @@ import AdminServiceCard from './AdminServiceCard/AdminServiceCard';
 
 const AdminServiceList = () => {
     const [serviceListInfo, setServiceListInfo] = useState([]);
+    const [reload, setReload] = useState(false);
     
     useEffect(()=>{
         fetch('https://cryptic-scrubland-55097.herokuapp.com/serviceList')
         .then(res => res.json())
         .then(data => setServiceListInfo(data))
         console.log(serviceListInfo);
-    },[])
+    },[reload])
 
     
     return (
@@ -25,7 +26,7 @@ const AdminServiceList = () => {
                 </tr>
                 {
                     serviceListInfo.map(serviceInfo => 
-                        <AdminServiceCard key={serviceInfo._id} serviceInfo={serviceInfo}></AdminServiceCard>
+                        <AdminServiceCard reload={reload} setReload = {setReload} key={serviceInfo._id} serviceInfo={serviceInfo}></AdminServiceCard>
                         )
                 }
             </table>

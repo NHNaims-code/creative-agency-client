@@ -32,5 +32,15 @@
         padding-right: 0px !important;
     }
     
+    .service-list-root{
+        padding: 0px !important;
+        margin: 0 !important;
+    }
+    .order-root{
+        width: 100% !important;
+    }
+    .resWidth{
+        width: 25% !important;
+    }
 
   }

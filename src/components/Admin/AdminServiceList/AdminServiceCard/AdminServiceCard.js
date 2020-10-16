@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const AdminServiceCard = ({serviceInfo}) => {
+const AdminServiceCard = ({reload,setReload,serviceInfo}) => {
     const [statusChange, setStatusChange] = useState(serviceInfo.status)
-
+    const location = useLocation();
     const handleStatus = (e) => {
         const updatetatus = e.target.value;
         setStatusChange(updatetatus)
@@ -18,6 +19,7 @@ const AdminServiceCard = ({serviceInfo}) => {
             .then(response => response.json()).then(response=> {
                 if(response){
                     alert('Updated successful')
+                    setReload(!reload)
                 }
             })
             
@@ -31,7 +33,7 @@ const AdminServiceCard = ({serviceInfo}) => {
                     <td className="w-20">{serviceInfo.service}</td>
                     <td className="w-20">{serviceInfo.details}</td>
                     <td>
-                    <select className="form-control" onChange={handleStatus}>
+                    <select className={`form-control ${serviceInfo.status === 'Pending' && 'alert-danger' || serviceInfo.status === 'Ongoing' && 'alert-warning' || serviceInfo.status === 'Done' && 'alert-success'}`} onChange={handleStatus}>
                         {
                             serviceInfo.status === 'Pending'?
                             <option className="text-danger" selected>Pending</option>
@@ -47,7 +49,7 @@ const AdminServiceCard = ({serviceInfo}) => {
                         }
                         {
                             serviceInfo.status === 'Done'?
-                            <option className="text-success">Done</option>
+                            <option className="text-success" selected>Done</option>
                             :
                             <option className="text-success">Done</option>
                         }

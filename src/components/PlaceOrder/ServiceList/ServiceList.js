@@ -17,7 +17,7 @@ const ServiceList = () => {
     .then(data => setServiceInfo(data))
     
     return (
-        <div className="row m-5 p-5">
+        <div className="row m-5 p-5 service-list-root ">
             {
                 serviceInfo.length > 0 ?
                 serviceInfo.map(data => <ServiceListCard data={data}></ServiceListCard>)
