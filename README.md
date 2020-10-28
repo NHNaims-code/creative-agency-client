@@ -1,25 +1,25 @@
-## Creative Agency is a small marketplace application like Fiverr.
+## Creative Agency is a small marketplace application like Fiverr.<br/>
 
-• Client can easily see all available services and buy any service
-• Admin can see all activity from admin panel
-• Easily can change the status of every order from the admin panel.
+• Client can easily see all available services and buy any service<br/>
+• Admin can see all activity from admin panel<br/>
+• Easily can change the status of every order from the admin panel.<br/>
 
-## This Application made with powerful latest technology
-• React Js
-• Node Js
-• Express
-• REST API
-• MongoDB
-• Material-UI
-• Bootstrap
+## This Application made with powerful latest technology<br/>
+• React Js<br/>
+• Node Js<br/>
+• Express<br/>
+• REST API<br/>
+• MongoDB<br/>
+• Material-UI<br/>
+• Bootstrap<br/>
 
-# This application's Live link: https://creative-agency-c7ca7.web.app
-[Open Live Website](https://creative-agency-c7ca7.web.app/)
-
-# LinkedIn Profile: https://www.linkedin.com/in/md-nimur-hasan
-[Visite LinkedIn Profile](https://www.linkedin.com/in/md-nimur-hasan/)
-
-## 
+## -
+This application's Live link: https://creative-agency-c7ca7.web.app<br/>
+[Open Live Website](https://creative-agency-c7ca7.web.app/)<br/>
+<br/>
+LinkedIn Profile: https://www.linkedin.com/in/md-nimur-hasan<br/>
+[Visite LinkedIn Profile](https://www.linkedin.com/in/md-nimur-hasan/)<br/>
+## -
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
