@@ -1,10 +1,10 @@
 ## Creative Agency is a small marketplace application like Fiverr.
 
-• Client can easily see all avaiable services and buy any service
+• Client can easily see all available services and buy any service
 • Admin can see all activity from admin panel
-• Admin easily change the status of every order.
+• Easily can change the status of every order from the admin panel.
 
-## This Application made with powerfull latest technology
+## This Application made with powerful latest technology
 • React Js
 • Node Js
 • Express
@@ -13,10 +13,10 @@
 • Material-UI
 • Bootstrap
 
-## This application's Live link: https://creative-agency-c7ca7.web.app
-[Open Live Website] (https://creative-agency-c7ca7.web.app/)
+# This application's Live link: https://creative-agency-c7ca7.web.app
+[Open Live Website](https://creative-agency-c7ca7.web.app/)
 
-## My LinkedIn Profile: https://www.linkedin.com/in/md-nimur-hasan
+# LinkedIn Profile: https://www.linkedin.com/in/md-nimur-hasan
 [Visite LinkedIn Profile](https://www.linkedin.com/in/md-nimur-hasan/)
 
 ## 
