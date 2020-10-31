@@ -1,24 +1,22 @@
-## Creative Agency is a small marketplace application like Fiverr.<br/>
+## 🎁 Creative Agency is a small marketplace application like Fiverr.<br/>
 
-• Client can easily see all available services and buy any service<br/>
-• Admin can see all activity from admin panel<br/>
-• Easily can change the status of every order from the admin panel.<br/>
-
+👉 A client can easily see all available services and buy any of them<br/>
+👉 Admin can see all activity from the admin panel and control all activities.<br/>
+👉 Admin can add or remove services.
+👉 The client gives us feedback. All feedback is shown on the home page UI.<br/>
+<img src="https://i.ibb.co/vj9qXnq/1-Landing-page.png"/>
 ## This Application made with powerful latest technology<br/>
-• React Js<br/>
-• Node Js<br/>
-• Express<br/>
-• REST API<br/>
-• MongoDB<br/>
-• Material-UI<br/>
-• Bootstrap<br/>
+⚙️ React Js<br/>
+⚙️ Node Js<br/>
+⚙️ Express<br/>
+⚙️ REST API<br/>
+⚙️ MongoDB<br/>
+⚙️ Material-UI<br/>
+⚙️ Bootstrap<br/>
 ##
-This application's Live link: https://creative-agency-c7ca7.web.app<br/>
-## [Open Live Website](https://creative-agency-c7ca7.web.app/)<br/>
-<br/>
-LinkedIn Profile: https://www.linkedin.com/in/md-nimur-hasan<br/>
-## [Visite LinkedIn Profile](https://www.linkedin.com/in/md-nimur-hasan/)<br/>
-
+🔗This application's Live link: https://creative-agency-c7ca7.web.app<br/>
+🔗LinkedIn Profile: https://www.linkedin.com/in/md-nimur-hasan<br/>
+🔗Portfolio: https://nimur.netlify.app
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
