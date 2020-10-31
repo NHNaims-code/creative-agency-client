@@ -3,8 +3,8 @@
 👉 A client can easily see all available services and buy any of them<br/>
 👉 Admin can see all activity from the admin panel and control all activities.<br/>
 👉 Admin can add or remove services.<br/>
-👉 The client gives us feedback. All feedback is shown on the home page UI.<br/>
-<img src="https://i.ibb.co/vj9qXnq/1-Landing-page.png"/>
+👉 The client gives us feedback. All feedback is shown on the home page UI.
+<img src="https://i.ibb.co/vj9qXnq/1-Landing-page.png" width="200" />
 ## This Application made with powerful latest technology<br/>
 ⚙️ React Js<br/>
 ⚙️ Node Js<br/>
